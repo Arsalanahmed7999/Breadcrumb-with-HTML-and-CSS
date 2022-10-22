@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreadCrumb</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        ul{
+            list-style-type: none;
+            background-color: black;
+            display: flex;
+        }
+        li{
+            color: whitesmoke;
+            padding: 10px 20px;
+        }
+        ul li a{
+            color: rgb(72, 72, 205);
+            margin: 10px 5px;
+            padding: 10px 5px;
+            text-decoration: none;
+        }
+        ul li a:hover{
+            color: rgb(177, 177, 245);
+text-decoration: underline;
+        }
+        ul li + li::before{
+content: '/';
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1 style="color: white;">BreadCrumb</h1>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Country</a></li>
+        <li><a href="#">State</a></li>
+        <li>Madhya</li>
+    </ul>
+</body>
+</html>
